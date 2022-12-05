@@ -83,13 +83,13 @@
  
     
 <script type="text/javascript">
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyD8rSCWlgiDN72VCSO9NTSsEkMTtsu4DM1SRCOz_GUJYy3ZuqL5hJpEQY31LVaRj8/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz9U_1NlrjqOmPSb5tCUGusTmx0xWed-LKA_EJixZ_un-bMYh8GOya3eLdu6NbCxxph/exec'
               const form = document.forms['google-sheet']
             
               form.addEventListener('submit', e => {
                 e.preventDefault()
                 fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                  .then(response => location.href = "https://www.facebook.com/")
+                  .then(response => location.href = "https://submit-codea.netlify.app/")
                   .catch(error => console.error('Error!', error.message))
               })
   </script>
